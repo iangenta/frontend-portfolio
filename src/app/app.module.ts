@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EducationComponent } from './education/education.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { SkillsComponent } from './skills/skills.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { FooterComponent } from './footer/footer.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { LogoutComponent } from './logout/logout.component';
-
+import { EducationComponent } from './components/education/education.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import {  HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
+    
     AppComponent,
     EducationComponent,
     ExperienceComponent,
@@ -26,11 +26,14 @@ import { LogoutComponent } from './logout/logout.component';
     ProjectsComponent,
     FooterComponent,
     AboutMeComponent,
-    LogoutComponent
+    LogoutComponent,
+    
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
