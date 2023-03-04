@@ -141,7 +141,10 @@ body {
     --paragraph-spacing: 1.2rem;
     --skills-bar-length: 0%;
 }
-
+.e-title{
+  color: #000;
+  font-size: var(--font-weight-bold);
+}
 button{
   background: none;
   border: none;
@@ -197,6 +200,10 @@ nav .ul{
     min-height: 52px;
     min-width: 80px;
     cursor: pointer;
+}
+
+.li .a:hover{
+  color:#2867B2;
 }
 .div-img{
     display: inline-block;
@@ -281,4 +288,12 @@ padding-bottom: 12px;
 #actions{
   display: flex;
   padding-top: 1.2rem;
+}
+
+
+@media (max-width: 745px){
+  #extend-info{
+      position: relative;
+  }
+
 }
