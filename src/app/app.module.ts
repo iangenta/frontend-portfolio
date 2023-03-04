@@ -6,13 +6,13 @@ import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import {  HttpClientModule } from '@angular/common/http'
+import { ProfileHeadComponent } from './components/profile-head/profile-head.component';
 @NgModule({
   declarations: [
     
@@ -21,12 +21,12 @@ import {  HttpClientModule } from '@angular/common/http'
     ExperienceComponent,
     SkillsComponent,
     HeaderComponent,
-    HomeComponent,
     LoginComponent,
     ProjectsComponent,
     FooterComponent,
     AboutMeComponent,
     LogoutComponent,
+    ProfileHeadComponent
     
   ],
   imports: [

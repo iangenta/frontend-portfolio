@@ -143,40 +143,37 @@ body {
 }
 
 button{
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    margin-bottom: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 0;
 }
 .display-flex{
-    display: flex !important;
+  display: flex !important;
 }
 
 .relative{
-    position: relative !important;
+  position: relative !important;
 }
 .text-align-left{
-    text-align: left;
+  text-align: left;
 }
 .margin-top{
-    margin-top:8px;
+  margin-top:8px;
 }
 .padding-vertical{
 padding-bottom: 24px;
 }
 .padding-horizontal{
-    padding-left: 24px;
-    padding-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .body{
-    background-color: #f3f2ef;
+  background-color: #f3f2ef;
 
 }
-
-
-
 
 nav .ul{
     display: flex;
@@ -221,4 +218,67 @@ nav .ul{
 .e-card{
 margin: 1.2rem;
 
+}
+
+
+.head-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacing-one-and-a-half-x);
+  padding-bottom: 0;
+
+}
+.span-subtitle{
+  font-size: 1rem;
+  font-weight: var(--font-weight-regular);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.c-container{
+  display: flex;
+  flex-direction: row;
+
+}
+.card-head-container{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.h2-title-container{
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-one-and-a-half-x) var(--spacing-one-and-a-half-x) 0;
+
+
+}
+.h2-title-container h2{
+  
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-bold);
+  color: rgba(0, 0, 0, 0.795);
+
+
+}
+.item-edit{
+  display: flex;
+
+}
+.p-container{
+  display: flex;
+padding-top: 12px;
+padding-bottom: 12px;
+}
+
+.btn-edit{
+  display: flex;
+  align-items: center;
+}
+
+#actions{
+  display: flex;
+  padding-top: 1.2rem;
 }
