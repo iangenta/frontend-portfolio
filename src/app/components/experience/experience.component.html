@@ -19,24 +19,24 @@
         </div>
       </div>
       <ul class="ul">
-        <li class="li">
+        <li *ngFor="let experience of experienceList"class="li">
           <div class="experience-div">
             <div class="image-experience-container">
               <div class="image-ed-div ">
-                <img src="/assets/company-ghost.svg" alt="" srcset="" />
+                <img [src]="experience.img" alt="" srcset="" />
               </div>
             </div>
             <div class="info-experience-container">
               <div class="title-experience-container">
                 <span class="sep">
-                  <span  class="e-title"> Fullstack Developer </span>
+                  <span  class="e-title"> {{experience.position}} </span>
                 </span>
               </div>
               <div class="company-experience-container">
-                profesional independiente
+                {{experience.company}}
               </div>
               <div class="date-experience span-subtitle">
-                ago. 2022 - Actualidad
+                {{experience.start}}- {{experience.end}}
               </div>
             </div>
           </div>

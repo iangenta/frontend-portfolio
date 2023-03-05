@@ -1,7 +1,7 @@
 <div class="card e-card" id="first-card">
   <div id="profile-bg">
     <img
-      src="/assets/background-picture.png"
+      [src]="miPortfolio.backimage"
       alt=""
       class="relative"
       srcset=""
@@ -9,7 +9,7 @@
   </div>
   <div id="info" class="padding-horizontal padding-vertical">
     <div id="info-img" class="display-flex">
-      <img src="/assets/profile-picture.png" alt="" class="profile-image" />
+      <img [src]="miPortfolio.profileimage" alt="" class="profile-image" />
       <div class="btn-edit">
         <a href="" class="btn-right"
           ><i><span class="material-symbols-outlined"> edit </span></i></a
@@ -19,11 +19,11 @@
     <!--User information profile card-->
     <div id="info-data" class="relative margin-top">
       <div>
-        <h1 class="name">{{name}} {{lastname}}</h1>
-        <div id="occupation" class="occupation">{{position}}</div>
+        <h1 class="name">{{miPortfolio.name}} {{miPortfolio.lastname}}</h1>
+        <div id="occupation" class="occupation">{{miPortfolio.position}}</div>
         <div id="contact-info">
           <span id="location" class="span-subtitle">
-           {{location}}
+          {{miPortfolio.location}}
           </span>
           <span
             ><a href="" class="contact-info-span"
@@ -40,7 +40,7 @@
             class="btn-list-1 text-align-left item-details"
           >
             <img
-              src="/assets/UNMDP-logo.png"
+              [src]="miPortfolio.education[0].img"
               alt=""
               class="company-logo"
               srcset=""

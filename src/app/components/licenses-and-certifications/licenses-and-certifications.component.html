@@ -19,27 +19,27 @@
       </div>
     </div>
     <ul class="ul">
-      <li class="li">
+      <li *ngFor="let certification of certificationsList"  class="li">
         <div class="education-div">
           <div class="image-education-container">
             <div class="image-ed-div">
-              <img src="/assets/coursera-google.png" alt="" srcset="" />
+              <img [src]="certification.img" alt="" srcset="" />
             </div>
           </div>
           <div class="info-education-container">
             <div class="title-education-container">
               <span class="sep">
                 <span>
-                  Certificacion Profesional Analisis de Datos de Google
+                  {{certification.name}}
                 </span>
               </span>
             </div>
-            <div class="company-experience-container">Coursera-Google</div>
-            <div class="date-experience span-subtitle">nov. 2022</div>
+            <div class="company-experience-container">{{certification.certifier}}</div>
+            <div class="date-experience span-subtitle">{{certification.date}}</div>
 
             <div class="padding-vertical">
               <a
-                href="https://www.coursera.org/account/accomplishments/specialization/certificate/EDFB6WFLDN36"
+                [href]="certification.url"
                 >Ver Certificado</a
               >
             </div>
@@ -47,106 +47,7 @@
         </div>
       </li>
 
-      <li class="li">
-        <div class="education-div">
-          <div class="image-education-container">
-            <div class="image-ed-div">
-              <img src="/assets/coursera-google.png" alt="" srcset="" />
-            </div>
-          </div>
-          <div class="info-education-container">
-            <div class="title-education-container">
-              <span class="sep">
-                <span>
-                  Especializacion Analisis de Datos de Google-Credly
-                </span>
-              </span>
-            </div>
-            <div class="company-experience-container">Coursera-Google</div>
-            <div class="date-experience span-subtitle">nov. 2022</div>
-
-            <div class="padding-vertical">
-              <a
-                href="https://www.credly.com/badges/1b74350b-7af3-497b-baf2-2258f877fc5b/linked_in_profile"
-                >Ver Certificado</a
-              >
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li class="li">
-        <div class="education-div">
-          <div class="image-education-container">
-            <div class="image-ed-div">
-              <img src="/assets/arg-prg-sp.png" alt="" srcset="" />
-            </div>
-          </div>
-          <div class="info-education-container">
-            <div class="title-education-container">
-              <span class="sep">
-                <span> Argentina Programa 2022-Sé Programar </span>
-              </span>
-            </div>
-            <div class="company-experience-container">
-              Argentina Programa
-            </div>
-            <div class="date-experience span-subtitle">sep. 2022</div>
-            <div class="padding-vertical">
-              <a
-                href="https://seprogramar.inti.gob.ar/inti/certificates/verify/e__v8_CVj86_hCd4"
-                >Ver Certificado</a
-              >
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li class="li">
-        <div class="education-div">
-          <div class="image-education-container">
-            <div class="image-ed-div">
-              <img src="/assets/itba-n.png" alt="" srcset="" />
-            </div>
-          </div>
-          <div class="info-education-container">
-            <div class="title-education-container">
-              <span class="sep">
-                <span> Certificación avanzada Fullstack Developer </span>
-              </span>
-            </div>
-            <div class="company-experience-container">
-              ITBA Universidad- Escuela de Innovacion
-            </div>
-            <div class="date-experience span-subtitle">ago. 2022</div>
-            <div class="padding-vertical">
-              <a
-                href="https://certtun.vottun.com/badgedetail?id=324e0a6d-c43a-4a05-9a4f-5229014ce8c9"
-                >Ver Certificado</a
-              >
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li class="li">
-        <div class="education-div">
-          <div class="image-education-container">
-            <div class="image-ed-div">
-              <img src="/assets/comunidad-it.png" alt="" srcset="" />
-            </div>
-          </div>
-          <div class="info-education-container">
-            <div class="title-education-container">
-              <span class="sep">
-                <span> Introducción al lenguaje de programación </span>
-              </span>
-            </div>
-            <div class="company-experience-container">Comunidad IT</div>
-            <div class="date-experience span-subtitle">abr 2022</div>
-          </div>
-        </div>
-      </li>
+      
     </ul>
   </div>
 </section>

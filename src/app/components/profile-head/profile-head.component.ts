@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
   selector: 'app-profile-head',
@@ -7,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileHeadComponent implements OnInit {
 
-  name ='Ián Leonel'
-  lastname ='Genta'
-  position = 'Fullstack Developer'
-  location='Mar del Plata, Buenos Aires(Argentina)'
-  constructor() { }
+  miPortfolio:any
 
-  ngOnInit() {
-  }
+  constructor(private datosPortfolio:PortfolioService) { }
+
+  ngOnInit():void {
+    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+      console.log(data);
+      this.miPortfolio=data;
+    })
+    }
 
 }
