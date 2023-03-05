@@ -7,12 +7,12 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { SkillsComponent } from './components/skills/skills.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import {  HttpClientModule } from '@angular/common/http'
 import { ProfileHeadComponent } from './components/profile-head/profile-head.component';
+import { LicensesAndCertificationsComponent } from './components/licenses-and-certifications/licenses-and-certifications.component';
 @NgModule({
   declarations: [
     
@@ -22,11 +22,11 @@ import { ProfileHeadComponent } from './components/profile-head/profile-head.com
     SkillsComponent,
     HeaderComponent,
     LoginComponent,
-    ProjectsComponent,
     FooterComponent,
     AboutMeComponent,
     LogoutComponent,
-    ProfileHeadComponent
+    ProfileHeadComponent,
+    LicensesAndCertificationsComponent,
     
   ],
   imports: [

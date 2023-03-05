@@ -41,3 +41,25 @@ border-top-right-radius:0.8rem;
 .btn-list-1{
     margin-bottom: var(--spacing-one-x);
 }
+
+.name{
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+}
+
+
+.contact-info-span{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    color:#0a66c2;
+    cursor: pointer;
+}
+.contact-info-span:hover{
+    text-decoration-line:underline;
+}
+.occupation{
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-regular);
+}
+

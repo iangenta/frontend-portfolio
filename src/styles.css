@@ -284,10 +284,19 @@ padding-bottom: 12px;
   display: flex;
   align-items: center;
 }
-
+.btn-list-1{
+  margin-bottom: var(--spacing-one-x);
+}
 #actions{
   display: flex;
   padding-top: 1.2rem;
+}
+#extend-info{
+  width: 232px;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 
