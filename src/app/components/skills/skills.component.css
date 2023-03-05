@@ -1,7 +1,15 @@
 .skills-div{
+    display: flex;
+    padding: 1.2rem 0;
+    padding-left: var(--spacing-three-x);
+    padding-right:var(--spacing-three-x) ;
+    border-bottom: 1px solid #f3f2ef;
+}
+.skills-div{
     display: grid;
     gap: .5em;
 }
+
 .hard-skills{
     padding: 1em 0;
 }
@@ -9,6 +17,9 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+}
+.skills-item span{
+    font-weight: bold;
 }
 .skills-bar,.skills-bar::after{
     position: relative;
